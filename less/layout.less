@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: @background;
+  color: @foreground;
+}
+
+.container {
+  margin: 0 auto;
+  padding: @container-padding;
+
+  @media (min-width: @screen-lg-min) {
+    width: ~"calc(46rem + 10vw)";
+  }
+}

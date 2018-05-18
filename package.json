@@ -9,7 +9,10 @@
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.0",
-    "gulp-less": "^3.3.2"
+    "gulp-less": "^3.3.2",
+    "gulp-resolve-dependencies": "^2.2.0",
+    "gulp-uglify": "^3.0.0",
+    "webfontloader": "^1.6.28"
   },
   "gh-pages-deploy": {
     "staticpath": "build",
@@ -22,14 +25,13 @@
     "build": "gulp",
     "deploy": "gh-pages-deploy"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mowchan/mowchan.github.io.git"
-  },
+  "repository": "git+https://github.com/mowchan/mowchan.github.io.git",
   "author": "dan@mowchan.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mowchan/mowchan.github.io/issues"
   },
-  "homepage": "https://github.com/mowchan/mowchan.github.io#readme"
+  "homepage": "https://github.com/mowchan/mowchan.github.io#readme",
+  "private": false,
+  "dependencies": {}
 }

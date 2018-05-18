@@ -1,0 +1,89 @@
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: @font-family-condensed;
+  line-height: 1.2;
+
+  @media (min-width: @screen-sm-min) {
+    font-size: ~"calc(1em + 0.65vw)";
+  }
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+  font-family: @font-family-monospace;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5 {
+  margin: 0 0 0.15em;
+  max-height: 999999px;
+  line-height: 1.2;
+}
+
+h1, .h1 {
+  font-size: 2.1em;
+  font-weight: @font-weight-regular;
+  text-transform: uppercase;
+}
+
+h2, .h2 {
+  font-size: 1.44em;
+  font-weight: @font-weight-light;
+}
+
+h3, .h3 {
+  font-size: 1.2em;
+  font-weight: @font-weight-light;
+}
+
+h4, .h4 {
+  font-size: 0.833em;
+  font-weight: @font-weight-bold;
+  line-height: 1em;
+  letter-spacing: 0.33em;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+p {
+  font-weight: @font-weight-light;
+}
+
+p.lead {
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+a {
+  color: @anchor;
+  text-decoration: none;
+
+  &:after {
+    position: relative;
+    top: -0.4em;
+    z-index: -1;
+    content: '';
+    display: block;
+    height: 0.5em;
+    width: 93%;
+    background: @anchor;
+    opacity: 0.15;
+  }
+
+  &:hover,
+  &:focus {
+    color: @emphasis;
+
+    &:after {
+      background: @emphasis;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+ul.connect {
+  margin-top: 2em;
+
+  li {
+    @media (min-width: @screen-md-min) {
+      display: inline-block;
+    }
+
+    @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+      width: 50%;
+      margin-bottom: 0.5em;
+    }
+
+    a {
+      .anchor-reset;
+      display: flex;
+      flex-direction: column;
+      height: 3em;
+
+      &:before {
+        margin-bottom: 0.25em;
+        color: @emphasis;
+      }
+    }
+
+    & + li {
+      @media (max-width: @screen-sm-max) {
+        margin-top: 0.25em;
+      }
+
+      @media (min-width: @screen-lg-min) {
+        margin-left: 2em;
+      }
+    }
+  }
+}
